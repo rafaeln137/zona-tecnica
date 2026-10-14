@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #0b0f14;
-  --bg-card: #121821;
-  --bg-card-raised: #161e29;
-  --line: #232d3a;
-  --ink: #edeff2;
-  --ink-muted: #8d9aab;
-  --blue: #4a8fc7;
-  --blue-dim: #234055;
-  --green: #4fa37d;
-  --green-dim: #1f3b30;
+  --bg: #0b1411;             /* Fondo oscuro con un sutil toque verde oliva */
+  --bg-card: #121f1a;        /* Tarjetas en verde oscuro profundo */
+  --bg-card-raised: #182922; /* Tarjetas resaltadas */
+  --line: #233a30;           /* Líneas divisorias en verde apagado */
+  --ink: #edf2f0;            /* Texto principal blanco brillante */
+  --ink-muted: #8daab1;      /* Texto secundario suavizado */
+  --blue: #52b788;           /* Reemplazamos el azul por verde menta brillante */
+  --blue-dim: #1f3b30;       /* Fondo de etiquetas principales en verde oscuro */
+  --green: #74c69d;          /* Números y estadísticas destacados en verde claro */
+  --green-dim: #1b4332;      /* Fondo de etiquetas secundarias */
   --max: 1120px;
 }
 
@@ -53,7 +53,7 @@ header.site {
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
-  background: rgba(11, 15, 20, 0.92);
+  background: rgba(11, 20, 17, 0.92);
   backdrop-filter: blur(6px);
   z-index: 10;
 }
@@ -92,8 +92,8 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
   font-family: 'Inter', sans-serif;
 }
 
-.tag.actualidad { background: var(--blue-dim); color: #8ec2e8; }
-.tag.ciencia { background: var(--green-dim); color: #8fd6b4; }
+.tag.actualidad { background: var(--blue-dim); color: #b7e4c7; }
+.tag.ciencia { background: var(--green-dim); color: #d8f3dc; }
 
 /* Hero */
 .hero {
@@ -146,15 +146,15 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
 .btn {
   display: inline-block;
   background: var(--blue);
-  color: #06131e;
-  font-weight: 600;
+  color: #0b1411;
+  weight: 600;
   font-size: 15px;
   padding: 12px 22px;
   border-radius: 4px;
   transition: background 0.15s;
 }
 
-.btn:hover { background: #5b9fd4; }
+.btn:hover { background: #74c69d; }
 
 .stat-card {
   background: var(--bg-card);
@@ -182,7 +182,7 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
   padding-top: 16px;
   border-top: 1px solid var(--line);
   font-size: 13px;
-  color: #5f6b7a;
+  color: #5f7a6b;
 }
 
 .stat-card .spark {
@@ -193,7 +193,7 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
 
 .stat-card .spark-caption {
   font-size: 12px;
-  color: #5f6b7a;
+  color: #5f7a6b;
   margin-top: 6px;
 }
 
@@ -210,8 +210,8 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
   flex-shrink: 0;
 }
 
-.cat-icon.ciencia-icon { color: #8fd6b4; }
-.cat-icon.actualidad-icon { color: #8ec2e8; }
+.cat-icon.ciencia-icon { color: #d8f3dc; }
+.cat-icon.actualidad-icon { color: #b7e4c7; }
 
 /* Article grid */
 .section-title {
@@ -236,7 +236,7 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
   transition: border-color 0.15s;
 }
 
-.card:hover { border-color: #34455a; }
+.card:hover { border-color: #40755b; }
 
 .card.featured { padding: 36px; }
 
@@ -260,7 +260,7 @@ nav.main a:hover, nav.main a.active { color: var(--ink); }
 
 .card .meta {
   font-size: 13px;
-  color: #5f6b7a;
+  color: #5f7a6b;
 }
 
 .stack { display: flex; flex-direction: column; gap: 28px; }
@@ -322,7 +322,7 @@ article.post .back:hover { color: var(--ink); }
 footer.site {
   border-top: 1px solid var(--line);
   padding: 36px 0;
-  color: #5f6b7a;
+  color: #5f7a6b;
   font-size: 14px;
 }
 
@@ -344,76 +344,3 @@ footer.site .wrap {
   html { scroll-behavior: auto; }
 }
 
-
-/* Paleta de colores Verde Tecnológico */
-:root {
-  --verde-oscuro: #1b4332;   /* Color principal para fondos importantes o encabezados */
-  --verde-medio: #2d6a4f;    /* Para botones y elementos destacados */
-  --verde-claro: #d8f3dc;    /* Fondo suave para contrastar secciones */
-  --verde-menta: #52b788;    /* Para enlaces o efectos al pasar el mouse */
-  --gris-oscuro: #212529;    /* Para que el texto sea perfectamente legible */
-  --blanco: #ffffff;
-}
-
-/* Aplicación general al cuerpo de la página */
-body {
-  background-color: #f4f9f4; /* Fondo general ligeramente verdoso y limpio */
-  color: var(--gris-oscuro);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Color de los Encabezados (Títulos) */
-h1, h2, h3 {
-  color: var(--verde-oscuro);
-}
-
-/* Si tienes una barra de navegación o cabecera principal */
-header, .navbar, .header {
-  background-color: var(--verde-oscuro) !important;
-  color: var(--blanco);
-  padding: 20px;
-}
-
-header a, .navbar a {
-  color: var(--verde-claro);
-  text-decoration: none;
-}
-
-header a:hover, .navbar a:hover {
-  color: var(--verde-menta);
-}
-
-/* Estilo para los botones de tu página */
-button, .boton, .btn {
-  background-color: var(--verde-medio);
-  color: var(--blanco);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-button:hover, .boton:hover, .btn:hover {
-  background-color: var(--verde-oscuro);
-}
-
-/* Enlaces generales en el texto */
-a {
-  color: var(--verde-medio);
-}
-a:hover {
-  color: var(--verde-oscuro);
-}
-
-/* Pie de página */
-footer {
-  background-color: var(--verde-oscuro);
-  color: var(--blanco);
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
