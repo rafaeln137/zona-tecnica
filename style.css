@@ -343,3 +343,77 @@ footer.site .wrap {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+
+/* Paleta de colores Verde Tecnológico */
+:root {
+  --verde-oscuro: #1b4332;   /* Color principal para fondos importantes o encabezados */
+  --verde-medio: #2d6a4f;    /* Para botones y elementos destacados */
+  --verde-claro: #d8f3dc;    /* Fondo suave para contrastar secciones */
+  --verde-menta: #52b788;    /* Para enlaces o efectos al pasar el mouse */
+  --gris-oscuro: #212529;    /* Para que el texto sea perfectamente legible */
+  --blanco: #ffffff;
+}
+
+/* Aplicación general al cuerpo de la página */
+body {
+  background-color: #f4f9f4; /* Fondo general ligeramente verdoso y limpio */
+  color: var(--gris-oscuro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Color de los Encabezados (Títulos) */
+h1, h2, h3 {
+  color: var(--verde-oscuro);
+}
+
+/* Si tienes una barra de navegación o cabecera principal */
+header, .navbar, .header {
+  background-color: var(--verde-oscuro) !important;
+  color: var(--blanco);
+  padding: 20px;
+}
+
+header a, .navbar a {
+  color: var(--verde-claro);
+  text-decoration: none;
+}
+
+header a:hover, .navbar a:hover {
+  color: var(--verde-menta);
+}
+
+/* Estilo para los botones de tu página */
+button, .boton, .btn {
+  background-color: var(--verde-medio);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover, .boton:hover, .btn:hover {
+  background-color: var(--verde-oscuro);
+}
+
+/* Enlaces generales en el texto */
+a {
+  color: var(--verde-medio);
+}
+a:hover {
+  color: var(--verde-oscuro);
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
